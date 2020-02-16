@@ -30,12 +30,7 @@
       center: [-123.1126, 49.2418],
       zoom: 10.7
     });
-    // code from the next step will go here
-    </script>
-  </body>
-</html>
-
-map.on('click', function(e) {
+    map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
     layers: ['layer-name-here'] // replace this with the name of the layer
   });
@@ -51,3 +46,7 @@ map.on('click', function(e) {
     .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
     .addTo(map);
 });
+
+    </script>
+  </body>
+</html>
